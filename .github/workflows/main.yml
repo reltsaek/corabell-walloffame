@@ -36,7 +36,7 @@ jobs:
           protocol: ftps                           # ftps (empfohlen), ftp oder sftp
           port: 21                                 # 21 für FTP/FTPS, 22 für SFTP
           local-dir: ./                            # Lokales Verzeichnis (z. B. ./dist/ nach Build)
-          server-dir: /corabell/lovegraphy/walloffame/       # Zielverzeichnis auf dem Server
+          server-dir: /    # Zielverzeichnis auf dem Server
           exclude: |
             **/.git*
             **/.git*/**
