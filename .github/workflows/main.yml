@@ -1,0 +1,45 @@
+name: Deploy via FTP
+
+on:
+  push:
+    branches:
+      - master  # Workflow wird ausgelöst bei Push auf main (ggf. auf "master" ändern)
+
+jobs:
+  deploy:
+    name: FTP Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Repository auschecken
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2. (Optional) Node.js / Build-Schritt – entfernen wenn nicht benötigt
+      # - name: Setup Node.js
+      #   uses: actions/setup-node@v4
+      #   with:
+      #     node-version: '20'
+      #
+      # - name: Install dependencies & build
+      #   run: |
+      #     npm ci
+      #     npm run build
+
+      # 3. FTP-Upload mit FTP-Deploy Action
+      - name: Deploy to FTP server
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}        # z. B. ftp.deine-domain.de
+          username: ${{ secrets.FTP_USERNAME }}    # FTP-Benutzername
+          password: ${{ secrets.FTP_PASSWORD }}    # FTP-Passwort
+          protocol: ftps                           # ftps (empfohlen), ftp oder sftp
+          port: 21                                 # 21 für FTP/FTPS, 22 für SFTP
+          local-dir: ./                            # Lokales Verzeichnis (z. B. ./dist/ nach Build)
+          server-dir: /corabell/lovegraphy/walloffame/        # Zielverzeichnis auf dem Server
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            README.md
+            .github/**
