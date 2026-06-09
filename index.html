@@ -1,30 +1,43 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Corabell Mag · Highlight-Reel einer Lovestory</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corabell Mag · Wall of Fame</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/overview.css">
 </head>
 <body>
-    <!-- dekorative Herzen -->
-    <div class="hearts" aria-hidden="true">
-        <span class="heart h1">♥</span>
-        <span class="heart h2">♥</span>
-        <span class="heart h3">♥</span>
-        <span class="heart h4">♥</span>
-        <span class="heart h5">♥</span>
-        <span class="heart h6">♥</span>
+
+  <header class="site-header">
+    <!-- Dekorative Lauflicht-Reihe -->
+    <div id="headerDeco" class="header-deco" aria-hidden="true"></div>
+
+    <div class="header-titles">
+      <p class="header-kicker">Corabell Magazin · Spezialausgabe</p>
+      <h1 class="header-logo">Wall of Fame</h1>
+      <p class="header-tagline">Highlight-Reel einer Lovestory ♥</p>
     </div>
 
-    <header class="site-header">
-        <div class="wrap">
-            <p class="kicker">Corabell Mag · Hochzeitszeitung</p>
-            <h1 class="logo">Wall of fame</h1>
-            <p class="tagline">Die schönsten Momente in bewegten Bildern ♥</p>
-        </div>
-    </header>
+    <!-- Hero-Foto -->
+    <div class="hero-photo">
+      <img src="restetst/test.png" alt="Corabell – Ein Abend voller Erinnerungen">
+    </div>
+  </header>
+
+  <main>
+    <div class="section-divider" aria-hidden="true">
+      <span class="section-divider-text">★ &nbsp; Die Filmstationen &nbsp; ★</span>
+    </div>
+
+    <div class="card-grid" id="cardGrid" role="list" aria-label="Alle Walk-of-Fame Einträge">
+      <!-- Karten werden per JS eingefügt -->
+    </div>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/overview.js"></script>
 </body>
 </html>

@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Great+Vibes&family=Special+Elite&display=swap');
+
+:root {
+  --bg:          #0F0F12;
+  --gold:        #D4AF5F;
+  --gold-light:  #EBC878;
+  --gold-dark:   #967332;
+  --star-pink:   #FAD2D7;
+  --cream:       #F5F0E6;
+  --marquee-bg:  #f0ede2;
+  --dark-frame:  #1a0e08;
+
+  --font-cinzel:  'Cinzel', serif;
+  --font-script:  'Great Vibes', cursive;
+  --font-marquee: 'Special Elite', monospace;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--cream);
+  font-family: var(--font-cinzel);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ── Bulb component (shared overview + detail) ─── */
+.bulb-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3px 0;
+}
+.bulb {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 38% 35%, #ffffff, #fff9d4 30%, #ffd060 55%, #c87a1f 85%);
+  box-shadow: 0 0 6px 2px rgba(255,210,80,.55);
+  animation: bulbBlink 1.6s infinite alternate ease-in-out;
+  flex-shrink: 0;
+}
+.bulb:nth-child(even) { animation-delay: .8s; }
+.bulb:nth-child(3n)   { animation-delay: .4s; }
+
+@keyframes bulbBlink {
+  from { opacity: .28; box-shadow: 0 0 3px 1px rgba(255,210,80,.2); }
+  to   { opacity: 1;   box-shadow: 0 0 10px 4px rgba(255,220,80,.7); }
+}
+
+/* ── Marquee sign (shared) ─────────────────────── */
+.marquee-sign {
+  background: linear-gradient(180deg, #2a1810, #1a0e08 50%, #2a1810);
+  border-radius: 3px;
+  padding: 8px 10px;
+}
+.marquee-board {
+  background: linear-gradient(180deg, #fafaf3, #f0ede2 55%, #e8e3d4);
+  padding: 14px 22px;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.45), inset 0 -1px 0 rgba(0,0,0,.15);
+}
+.marquee-text {
+  font-family: var(--font-marquee);
+  color: #1a1000;
+  text-align: center;
+  line-height: 1.45;
+  font-size: clamp(.75rem, 2vw, 1.05rem);
+  min-height: 1.5em;
+}
