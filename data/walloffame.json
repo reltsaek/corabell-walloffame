@@ -1,0 +1,143 @@
+{
+  "palette": {
+    "bgPrimary": "#0F0F12",
+    "gold": "#D4AF5F",
+    "goldLight": "#EBC878",
+    "goldDark": "#967332",
+    "starPink": "#FAD2D7",
+    "filmtitelWeiss": "#F5F0E6",
+    "sternSchrift": "#08080A"
+  },
+  "eintraege": [
+    {
+      "nr": 1,
+      "sternTitel": "KNIGHT RIDER",
+      "filmtitel": "Knight Rider",
+      "typ": "TV-Serie",
+      "jahre": "1982 – 1986",
+      "jahr": 1982,
+      "lovestoryTitel": "2003 – Ein Auto, ein Kennzeichen, ein Schicksal.",
+      "zitat": "Ein Mann, der die Welt verändern will – mit einem Auto, das denken kann.",
+      "werSagt": "Wilton Knight (gesprochen von Richard Basehart) – der Gründer der Foundation FLAG.",
+      "szeneBeschreibung": "Aus dem ikonischen Vorspann der Serie: Wilton Knight gibt Michael Knight (David Hasselhoff) seine Mission mit auf den Weg – ein Mann, der mit Hilfe seines Wunderautos K.I.T.T. für Gerechtigkeit kämpft.",
+      "teaserBild": "images/teaser/poster-1.jpg"
+    },
+    {
+      "nr": 2,
+      "sternTitel": "NOTTING HILL",
+      "filmtitel": "Notting Hill",
+      "typ": "Film",
+      "jahre": "1999",
+      "jahr": 1999,
+      "lovestoryTitel": "2003 – Die Schwägerin weiß es zuerst",
+      "zitat": "Ich bin doch nur ein Mädchen, das vor einem Jungen steht und ihn bittet, es zu lieben.",
+      "werSagt": "Anna Scott, gespielt von Julia Roberts.",
+      "szeneBeschreibung": "Die berühmteste Szene des Films: Anna Scott, eine weltberühmte Hollywood-Schauspielerin, kommt in den Londoner Buchladen von William Thacker (Hugh Grant) und gesteht ihm ihre Liebe – verkleidet als ganz normale junge Frau, die nicht als Star, sondern als Mensch geliebt werden möchte.",
+      "teaserBild": "images/teaser/poster-2.jpg"
+    },
+    {
+      "nr": 3,
+      "sternTitel": "SHREK",
+      "filmtitel": "Shrek – Der tollkühne Held",
+      "typ": "Film",
+      "jahre": "2001",
+      "jahr": 2001,
+      "lovestoryTitel": "Ostern 2003 – „Ralf der tollkühne Held"",
+      "zitat": "So ist es nun mal – bis zur wahren Liebe erster Kuss.",
+      "werSagt": "Der Märchenbuch-Erzähler bzw. Shrek selbst (im Original: Mike Myers; deutsche Synchronstimme: Sky du Mont).",
+      "szeneBeschreibung": "Im animierten Vorspann des Films liest Shrek aus einem alten Märchenbuch vor: Eine Prinzessin (Fiona, später gesprochen von Cameron Diaz / dt. Esther Schweins) sitzt in einem Turm und wartet auf den ersten Kuss der wahren Liebe, der den Fluch lösen soll. Am Ende erfüllt sich das Märchen – nur eben anders als gedacht.",
+      "teaserBild": "images/teaser/poster-3.jpg"
+    },
+    {
+      "nr": 4,
+      "sternTitel": "KUCKUCKSNEST",
+      "filmtitel": "Einer flog über das Kuckucksnest",
+      "typ": "Film",
+      "jahre": "1975",
+      "jahr": 1975,
+      "lovestoryTitel": "2005 – Gemeinsames Nest oder Irrenanstalt",
+      "zitat": "Ich hab's wenigstens versucht, verdammt nochmal.",
+      "werSagt": "Randle Patrick McMurphy, gespielt von Jack Nicholson (Oscar als Bester Hauptdarsteller).",
+      "szeneBeschreibung": "Eine der berühmtesten Szenen: McMurphy versucht, einen schweren marmornen Hydrotherapietisch aus dem Boden zu reißen, um damit das Fenster der Psychiatrie einzuschlagen und in eine Bar zu entkommen, um die Baseball-Endspiele zu sehen. Er scheitert kläglich – sagt aber stolz diesen Satz zu seinen sprachlosen Mitinsassen.",
+      "teaserBild": "images/teaser/poster-4.jpg"
+    },
+    {
+      "nr": 5,
+      "sternTitel": "KUCK MAL, WER DA SPRICHT!",
+      "filmtitel": "Kuck mal, wer da spricht!",
+      "typ": "Film",
+      "jahre": "1989",
+      "jahr": 1989,
+      "lovestoryTitel": "2007 – „Hallo, ich bin neu hier" – die Geburt des ersten Sohnes",
+      "zitat": "Oh Mann, ist das hell hier draußen! Und wer sind diese ganzen Riesen?",
+      "werSagt": "Baby Mikey – in der Originalfassung gesprochen von Bruce Willis, in der deutschen Synchronfassung von Thomas Gottschalk.",
+      "szeneBeschreibung": "Die Geburtsszene: Mollie (Kirstie Alley) wird vom Taxifahrer James (John Travolta) ins Krankenhaus gefahren und bringt Baby Mikey zur Welt. Dabei hört das Publikum erstmals die kessen inneren Gedanken des Babys – ein Markenzeichen des Films.",
+      "teaserBild": "images/teaser/poster-5.jpg"
+    },
+    {
+      "nr": 6,
+      "sternTitel": "VERRÜCKT NACH MARY",
+      "filmtitel": "Verrückt nach Mary",
+      "typ": "Film",
+      "jahre": "1998",
+      "jahr": 1998,
+      "lovestoryTitel": "2008 – „Verrückt nach Platz": Umzug in die Theo-Neubauer-Straße",
+      "zitat": "Echte Liebe ist, wenn du den anderen auch dann noch magst, wenn er dich nervt.",
+      "werSagt": "Frei nach dem Geist des Films rund um Ted (Ben Stiller), Mary (Cameron Diaz) und Pat Healy (Matt Dillon).",
+      "szeneBeschreibung": "Die Farrelly-Brothers-Komödie über Ted, der 13 Jahre lang von seiner Highschool-Liebe Mary träumt. Trotz aller Hindernisse (peinlicher Reißverschluss-Unfall, schmieriger Detektiv, verrückte Nebenbuhler) finden die beiden am Ende zueinander – wahre Liebe trotz aller verrückten Begleitumstände.",
+      "teaserBild": "images/teaser/poster-6.jpg"
+    },
+    {
+      "nr": 7,
+      "sternTitel": "FINDET NEMO",
+      "filmtitel": "Findet Nemo",
+      "typ": "Film",
+      "jahre": "2003",
+      "jahr": 2003,
+      "lovestoryTitel": "2010 – „Findet Emil": Die Geburt des zweiten Sohns",
+      "zitat": "Einfach schwimmen, einfach schwimmen, schwimmen, schwimmen.",
+      "werSagt": "Dory, der vergessliche Doktorfisch – im Original gesprochen von Ellen DeGeneres, in der deutschen Fassung von Anke Engelke.",
+      "szeneBeschreibung": "Marlin (Albert Brooks / dt. Christian Tramitz), der verzweifelte Clownfisch-Vater auf der Suche nach seinem Sohn Nemo, ist frustriert und verliert die Hoffnung. Dory singt ihm ihr berühmtes Mantra als kleines Lebensmotto vor: Egal wie schwer es wird, einfach weitermachen!",
+      "teaserBild": "images/teaser/poster-7.jpg"
+    },
+    {
+      "nr": 8,
+      "sternTitel": "HOCHZEIT MEINES BESTEN FREUNDES",
+      "filmtitel": "Die Hochzeit meines besten Freundes",
+      "typ": "Film",
+      "jahre": "1997",
+      "jahr": 1997,
+      "lovestoryTitel": "2017 – „Die Hochzeit meiner besten Freunde": Verlobung mit Ansage",
+      "zitat": "Oh mein Gott, ich will nicht sterben, ohne verlobt zu sein!",
+      "werSagt": "Julianne Potter, gespielt von Julia Roberts – Restaurant-Kritikerin und beste Freundin des Bräutigams.",
+      "szeneBeschreibung": "Julianne erfährt, dass ihr bester Freund Michael (Dermot Mulroney) plötzlich heiraten will – und zwar nicht sie, sondern die hübsche Kimmy (Cameron Diaz). Julianne erkennt, dass sie selbst in Michael verliebt ist, und gerät in Panik wegen ihres bevorstehenden 28. Geburtstags und dem alten Pakt der beiden, einander zu heiraten, falls sie bis dahin Single sind.",
+      "teaserBild": "images/teaser/poster-8.jpg"
+    },
+    {
+      "nr": 9,
+      "sternTitel": "MURMELTIER",
+      "filmtitel": "Und täglich grüßt das Murmeltier",
+      "typ": "Film",
+      "jahre": "1993",
+      "jahr": 1993,
+      "lovestoryTitel": "2026 – Déjà-vu oder spätes Revival – oder doch schon Demenz?",
+      "zitat": "Was würdest du tun, wenn du an einem Ort festsitzen würdest und jeder Tag genau gleich wäre?",
+      "werSagt": "Phil Connors, gespielt von Bill Murray – der zynische TV-Wettermann.",
+      "szeneBeschreibung": "Phil sitzt in einer Bar in Punxsutawney fest, hat den Murmeltiertag bereits unzählige Male erlebt und stellt zwei Männern an der Theke diese fast philosophische Frage. Einer antwortet trocken: „Das beschreibt mein Leben ziemlich genau." – einer der treffendsten Momente des Films.",
+      "teaserBild": "images/teaser/poster-9.jpg"
+    },
+    {
+      "nr": 10,
+      "sternTitel": "HARRY UND SALLY",
+      "filmtitel": "Harry und Sally",
+      "typ": "Film",
+      "jahre": "1989",
+      "jahr": 1989,
+      "lovestoryTitel": "2026 – Was lange währt, wird endlich gut",
+      "zitat": "Wenn man erst mal weiß, dass man den Rest seines Lebens mit jemandem verbringen will, möchte man, dass der Rest des Lebens so schnell wie möglich anfängt.",
+      "werSagt": "Harry Burns, gespielt von Billy Crystal – an Sally Albright, gespielt von Meg Ryan.",
+      "szeneBeschreibung": "Die ikonische Silvester-Schluss-Szene: Harry rennt durch die nächtlichen Straßen von New York zur Silvesterparty, findet Sally und hält ihr seine große, romantische Liebeserklärung – die in diesem berühmtesten aller Rom-Com-Sätze gipfelt. Spoiler: Sie heiraten.",
+      "teaserBild": "images/teaser/poster-10.jpg"
+    }
+  ]
+}

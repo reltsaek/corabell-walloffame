@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1500 500"
+     width="1500" height="500"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+
+  <title>StarFlash Hochzeitszeitung - Hollywood Marquee Vorlage</title>
+  <desc>Beleuchtetes Kino-Marquee-Schild mit Glühbirnen-Rahmen und horizontalen Textzeilen</desc>
+
+  <!-- ============ DEFINITIONS ============ -->
+  <defs>
+
+    <!-- Dunkler Holz-/Metallrahmen mit leichtem Verlauf -->
+    <linearGradient id="frameGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#2a1810"/>
+      <stop offset="50%"  stop-color="#1a0e08"/>
+      <stop offset="100%" stop-color="#2a1810"/>
+    </linearGradient>
+
+    <!-- Innenflaeche (weisse Marquee-Tafel) mit subtilen Verlauf -->
+    <linearGradient id="boardGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#fafaf3"/>
+      <stop offset="50%"  stop-color="#f0ede2"/>
+      <stop offset="100%" stop-color="#e8e3d4"/>
+    </linearGradient>
+
+    <!-- Reflexions-Glanz auf der Tafel (diagonaler Lichtstreif) -->
+    <linearGradient id="boardShine" x1="0%" y1="0%" x2="100%" y2="40%">
+      <stop offset="0%"   stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="45%"  stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="55%"  stop-color="#ffffff" stop-opacity="0.25"/>
+      <stop offset="60%"  stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Gluehbirne: warmer radialer Verlauf von heissem Kern zu Glow -->
+    <radialGradient id="bulbGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#fffbe6" stop-opacity="1"/>
+      <stop offset="20%"  stop-color="#fff2b5" stop-opacity="1"/>
+      <stop offset="55%"  stop-color="#ffb84d" stop-opacity="0.9"/>
+      <stop offset="85%"  stop-color="#c77a1f" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#5a2f0a" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Innerer heller Kern der Birne -->
+    <radialGradient id="bulbCore" cx="40%" cy="40%" r="40%">
+      <stop offset="0%"   stop-color="#ffffff" stop-opacity="1"/>
+      <stop offset="60%"  stop-color="#fff5cc" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#ffd97f" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Strahlen-Effekt um die Birne -->
+    <radialGradient id="bulbRays" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#ffe9a1" stop-opacity="0.7"/>
+      <stop offset="40%"  stop-color="#ffb84d" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- WIEDERVERWENDBARE GLUEHBIRNE -->
+    <g id="bulb">
+      <!-- Aussenstrahl/Halo (gross, weich) -->
+      <circle cx="0" cy="0" r="28" fill="url(#bulbRays)"/>
+      <!-- Hauptkugel der Birne -->
+      <circle cx="0" cy="0" r="14" fill="url(#bulbGlow)"/>
+      <!-- Heller Kern -->
+      <circle cx="0" cy="0" r="9" fill="url(#bulbCore)"/>
+      <!-- Kleines weisses Highlight (Glanzpunkt) -->
+      <circle cx="-3" cy="-3" r="2.5" fill="#ffffff" opacity="0.9"/>
+      <!-- Spitze des Strahls (Stern-Form, klein) -->
+      <g opacity="0.6">
+        <line x1="-22" y1="0" x2="22" y2="0" stroke="#ffe9a1" stroke-width="0.8"/>
+        <line x1="0" y1="-22" x2="0" y2="22" stroke="#ffe9a1" stroke-width="0.8"/>
+      </g>
+    </g>
+
+    <!-- Kleine Schraube/Halterung neben jeder Birne (optional, subtil) -->
+    <g id="bulbSocket">
+      <circle cx="0" cy="0" r="6" fill="#1a0e08" opacity="0.5"/>
+    </g>
+
+  </defs>
+
+  <!-- ============ ÄUSSERER RAHMEN ============ -->
+  <!-- Schwarzer/dunkler Rahmen rundherum -->
+  <rect x="0" y="0" width="1500" height="500"
+        fill="url(#frameGradient)"/>
+
+  <!-- Dünne dunkle Außenkante -->
+  <rect x="0" y="0" width="1500" height="500"
+        fill="none" stroke="#0a0503" stroke-width="2"/>
+
+  <!-- ============ INNERE MARQUEE-TAFEL ============ -->
+  <!-- Helle weisse Innenflaeche -->
+  <rect x="80" y="80" width="1340" height="340"
+        fill="url(#boardGradient)"
+        stroke="#3a2418" stroke-width="2"/>
+
+  <!-- Reflexions-Glanz darüber -->
+  <rect x="80" y="80" width="1340" height="340"
+        fill="url(#boardShine)" pointer-events="none"/>
+
+  <!-- Subtiler innerer Rand -->
+  <rect x="84" y="84" width="1332" height="332"
+        fill="none" stroke="#d4cdb8" stroke-width="1" opacity="0.6"/>
+
+  <!-- ============ HORIZONTALE TRENNLINIEN ============ -->
+  <!-- Vier Zeilen, jede mit subtilen Schatten -->
+  <g id="dividerLines">
+    <!-- Linie 1 -->
+    <line x1="90" y1="165" x2="1410" y2="165"
+          stroke="#3a2418" stroke-width="2.5" opacity="0.85"/>
+    <line x1="90" y1="167" x2="1410" y2="167"
+          stroke="#ffffff" stroke-width="1" opacity="0.4"/>
+
+    <!-- Linie 2 -->
+    <line x1="90" y1="250" x2="1410" y2="250"
+          stroke="#3a2418" stroke-width="2.5" opacity="0.85"/>
+    <line x1="90" y1="252" x2="1410" y2="252"
+          stroke="#ffffff" stroke-width="1" opacity="0.4"/>
+
+    <!-- Linie 3 -->
+    <line x1="90" y1="335" x2="1410" y2="335"
+          stroke="#3a2418" stroke-width="2.5" opacity="0.85"/>
+    <line x1="90" y1="337" x2="1410" y2="337"
+          stroke="#ffffff" stroke-width="1" opacity="0.4"/>
+  </g>
+
+  <!-- ============ GLÜHBIRNEN-RAHMEN ============ -->
+  <!-- Wir verteilen die Birnen entlang der vier Seiten -->
+
+  <g id="bulbsTop">
+    <!-- Obere Reihe: 30 Birnen von x=40 bis x=1460 -->
+    <use xlink:href="#bulb" x="40"   y="40"/>
+    <use xlink:href="#bulb" x="89"   y="40"/>
+    <use xlink:href="#bulb" x="138"  y="40"/>
+    <use xlink:href="#bulb" x="187"  y="40"/>
+    <use xlink:href="#bulb" x="236"  y="40"/>
+    <use xlink:href="#bulb" x="285"  y="40"/>
+    <use xlink:href="#bulb" x="334"  y="40"/>
+    <use xlink:href="#bulb" x="383"  y="40"/>
+    <use xlink:href="#bulb" x="432"  y="40"/>
+    <use xlink:href="#bulb" x="481"  y="40"/>
+    <use xlink:href="#bulb" x="530"  y="40"/>
+    <use xlink:href="#bulb" x="579"  y="40"/>
+    <use xlink:href="#bulb" x="628"  y="40"/>
+    <use xlink:href="#bulb" x="677"  y="40"/>
+    <use xlink:href="#bulb" x="726"  y="40"/>
+    <use xlink:href="#bulb" x="775"  y="40"/>
+    <use xlink:href="#bulb" x="824"  y="40"/>
+    <use xlink:href="#bulb" x="873"  y="40"/>
+    <use xlink:href="#bulb" x="922"  y="40"/>
+    <use xlink:href="#bulb" x="971"  y="40"/>
+    <use xlink:href="#bulb" x="1020" y="40"/>
+    <use xlink:href="#bulb" x="1069" y="40"/>
+    <use xlink:href="#bulb" x="1118" y="40"/>
+    <use xlink:href="#bulb" x="1167" y="40"/>
+    <use xlink:href="#bulb" x="1216" y="40"/>
+    <use xlink:href="#bulb" x="1265" y="40"/>
+    <use xlink:href="#bulb" x="1314" y="40"/>
+    <use xlink:href="#bulb" x="1363" y="40"/>
+    <use xlink:href="#bulb" x="1412" y="40"/>
+    <use xlink:href="#bulb" x="1460" y="40"/>
+  </g>
+
+  <g id="bulbsBottom">
+    <!-- Untere Reihe: 30 Birnen -->
+    <use xlink:href="#bulb" x="40"   y="460"/>
+    <use xlink:href="#bulb" x="89"   y="460"/>
+    <use xlink:href="#bulb" x="138"  y="460"/>
+    <use xlink:href="#bulb" x="187"  y="460"/>
+    <use xlink:href="#bulb" x="236"  y="460"/>
+    <use xlink:href="#bulb" x="285"  y="460"/>
+    <use xlink:href="#bulb" x="334"  y="460"/>
+    <use xlink:href="#bulb" x="383"  y="460"/>
+    <use xlink:href="#bulb" x="432"  y="460"/>
+    <use xlink:href="#bulb" x="481"  y="460"/>
+    <use xlink:href="#bulb" x="530"  y="460"/>
+    <use xlink:href="#bulb" x="579"  y="460"/>
+    <use xlink:href="#bulb" x="628"  y="460"/>
+    <use xlink:href="#bulb" x="677"  y="460"/>
+    <use xlink:href="#bulb" x="726"  y="460"/>
+    <use xlink:href="#bulb" x="775"  y="460"/>
+    <use xlink:href="#bulb" x="824"  y="460"/>
+    <use xlink:href="#bulb" x="873"  y="460"/>
+    <use xlink:href="#bulb" x="922"  y="460"/>
+    <use xlink:href="#bulb" x="971"  y="460"/>
+    <use xlink:href="#bulb" x="1020" y="460"/>
+    <use xlink:href="#bulb" x="1069" y="460"/>
+    <use xlink:href="#bulb" x="1118" y="460"/>
+    <use xlink:href="#bulb" x="1167" y="460"/>
+    <use xlink:href="#bulb" x="1216" y="460"/>
+    <use xlink:href="#bulb" x="1265" y="460"/>
+    <use xlink:href="#bulb" x="1314" y="460"/>
+    <use xlink:href="#bulb" x="1363" y="460"/>
+    <use xlink:href="#bulb" x="1412" y="460"/>
+    <use xlink:href="#bulb" x="1460" y="460"/>
+  </g>
+
+  <g id="bulbsLeft">
+    <!-- Linke Spalte: 8 Birnen (zwischen Top und Bottom) -->
+    <use xlink:href="#bulb" x="40" y="90"/>
+    <use xlink:href="#bulb" x="40" y="140"/>
+    <use xlink:href="#bulb" x="40" y="190"/>
+    <use xlink:href="#bulb" x="40" y="240"/>
+    <use xlink:href="#bulb" x="40" y="290"/>
+    <use xlink:href="#bulb" x="40" y="340"/>
+    <use xlink:href="#bulb" x="40" y="390"/>
+  </g>
+
+  <g id="bulbsRight">
+    <!-- Rechte Spalte: 8 Birnen -->
+    <use xlink:href="#bulb" x="1460" y="90"/>
+    <use xlink:href="#bulb" x="1460" y="140"/>
+    <use xlink:href="#bulb" x="1460" y="190"/>
+    <use xlink:href="#bulb" x="1460" y="240"/>
+    <use xlink:href="#bulb" x="1460" y="290"/>
+    <use xlink:href="#bulb" x="1460" y="340"/>
+    <use xlink:href="#bulb" x="1460" y="390"/>
+  </g>
+
+  <!-- ============ TEXTBEREICHE (Platzhalter zum Befuellen in Canva) ============ -->
+  <!-- Diese Texte sind als Platzhalter eingezeichnet, koennen in Canva einfach
+       ausgetauscht oder geloescht werden. Jede Zeile hat eine eigene Position. -->
+  <g id="placeholderText" font-family="Georgia, serif" text-anchor="middle"
+     fill="#2a1810">
+    <text x="750" y="135" font-size="42" font-weight="bold" letter-spacing="3">
+      ÜBERSCHRIFT HIER
+    </text>
+    <text x="750" y="220" font-size="32" font-style="italic">
+      Zweite Zeile zum Bearbeiten
+    </text>
+    <text x="750" y="305" font-size="28">
+      Dritte Zeile
+    </text>
+    <text x="750" y="390" font-size="24" letter-spacing="2">
+      VIERTE ZEILE
+    </text>
+  </g>
+
+</svg>
