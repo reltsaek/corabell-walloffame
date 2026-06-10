@@ -14,7 +14,7 @@
 /* ── Navigation Bar ──────────────────── */
 .detail-nav {
   width: 100%;
-  max-width: 520px;
+  max-width: 676px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -55,7 +55,7 @@
 /* ── Walk-of-Fame Card ───────────────── */
 .wof-card {
   position: relative;
-  width: min(440px, 192vw);
+  width: min(572px, 92vw);
   aspect-ratio: 2/3;
   background-image: url('../StarFlash_Karten_leer_fuer_Canva/karte_leer_01.png');
   background-size: 100% 100%;
@@ -182,7 +182,7 @@
 
 /* ── lovestoryTitel Banner ───────────── */
 .wof-banner-wrap {
-  width: min(440px, 92vw);
+  width: min(572px, 92vw);
   margin-top: 20px;
 
   /* fade in after card */
@@ -210,7 +210,7 @@
 
 /* ── Accordion (Szene & Wer sagt) ────── */
 .wof-accordion {
-  width: min(440px, 92vw);
+  width: min(572px, 92vw);
   margin-top: 24px;
   display: flex;
   flex-direction: column;
@@ -284,7 +284,7 @@
 
 /* ── Prev/Next navigation (bottom) ───── */
 .detail-nav-bottom {
-  width: min(440px, 92vw);
+  width: min(572px, 92vw);
   display: flex;
   justify-content: space-between;
   margin-top: 32px;
