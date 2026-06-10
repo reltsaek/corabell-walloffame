@@ -44,6 +44,7 @@
   color: var(--gold-light);
 }
 .nav-btn:disabled { opacity: .3; cursor: default; }
+.nav-btn-group { display: flex; gap: 8px; }
 .nav-center {
   font-family: var(--font-cinzel);
   font-size: .85rem;
@@ -278,33 +279,33 @@
   display: inline-flex;
   flex-direction: column;
   align-items: center;
-  gap: 5px;
-  background: rgba(212,175,95,.1);
-  border: 1.5px solid var(--gold);
+  gap: 6px;
+  background: #c0392b;
+  border: none;
   border-radius: 4px;
-  padding: 10px 22px;
+  padding: 12px 28px;
   cursor: pointer;
-  color: var(--gold-light);
+  color: #ffffff;
   font-family: var(--font-cinzel);
-  font-size: .72rem;
-  letter-spacing: .14em;
-  transition: background .2s, transform .15s;
+  font-size: .78rem;
+  letter-spacing: .16em;
+  transition: background .2s, transform .15s, box-shadow .2s;
   animation: ctaPulse 2.4s ease-in-out infinite;
 }
 .reveal-cta:hover {
-  background: rgba(212,175,95,.24);
-  box-shadow: 0 0 22px rgba(212,175,95,.5);
+  background: #e74c3c;
+  box-shadow: 0 4px 20px rgba(192,57,43,.6);
   transform: scale(1.06);
   animation: none;
 }
 .reveal-cta-icon {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   line-height: 1;
   display: block;
 }
 @keyframes ctaPulse {
-  0%, 100% { box-shadow: 0 0 6px rgba(212,175,95,.15); }
-  50%       { box-shadow: 0 0 24px rgba(212,175,95,.55); }
+  0%, 100% { box-shadow: 0 2px 8px rgba(192,57,43,.3); }
+  50%       { box-shadow: 0 4px 24px rgba(192,57,43,.7); }
 }
 
 /* Meta hidden */

@@ -98,8 +98,10 @@ async function init() {
 
   const eintraege = getAllEintraege();
   const cards = eintraege.map((e, i) => {
+    const li = document.createElement('li');
     const card = buildCard(e, i);
-    grid.appendChild(card);
+    li.appendChild(card);
+    grid.appendChild(li);
     return card;
   });
 
