@@ -23,7 +23,7 @@
 }
 .header-kicker {
   font-family: var(--font-cinzel);
-  font-size: clamp(.65rem, 1.5vw, .85rem);
+  font-size: clamp(.85rem, 1.95vw, 1.11rem);
   letter-spacing: .25em;
   color: var(--gold);
   text-transform: uppercase;
@@ -32,7 +32,7 @@
 .header-logo {
   font-family: var(--font-cinzel);
   font-weight: 900;
-  font-size: clamp(2rem, 7vw, 4rem);
+  font-size: clamp(2.6rem, 9.1vw, 5.2rem);
   color: var(--cream);
   letter-spacing: .08em;
   line-height: 1;
@@ -40,7 +40,7 @@
 }
 .header-tagline {
   font-family: var(--font-script);
-  font-size: clamp(1.2rem, 3vw, 2rem);
+  font-size: clamp(1.56rem, 3.9vw, 2.6rem);
   color: var(--gold-light);
   margin-top: 6px;
 }
@@ -90,7 +90,7 @@
 }
 .section-divider-text {
   font-family: var(--font-cinzel);
-  font-size: .7rem;
+  font-size: .91rem;
   letter-spacing: .25em;
   color: var(--gold);
   white-space: nowrap;
@@ -162,7 +162,7 @@ main { padding: 0 20px 60px; }
   font-family: var(--font-cinzel);
   font-weight: 900;
   color: var(--gold);
-  font-size: .95rem;
+  font-size: 1.24rem;
   line-height: 1;
   white-space: nowrap;
   flex-shrink: 0;
@@ -172,13 +172,13 @@ main { padding: 0 20px 60px; }
   font-family: var(--font-cinzel);
   font-weight: 700;
   color: var(--cream);
-  font-size: .78rem;
+  font-size: 1.01rem;
   line-height: 1.25;
 }
 .teaser-year {
   font-family: var(--font-cinzel);
   color: var(--gold-light);
-  font-size: .62rem;
+  font-size: .81rem;
   letter-spacing: .05em;
 }
 
@@ -197,7 +197,7 @@ main { padding: 0 20px 60px; }
   font-family: var(--font-cinzel);
   font-variant: small-caps;
   color: var(--gold);
-  font-size: .62rem;
+  font-size: .81rem;
   line-height: 1.35;
   letter-spacing: .02em;
 }
