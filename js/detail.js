@@ -169,6 +169,15 @@ function render(eintrag) {
     bannerText.textContent = eintrag.lovestoryTitel;
   }
 
+  // ── Teaser image
+  const teaserImg = document.getElementById('teaserImg');
+  if (teaserImg && eintrag.teaserBild) {
+    teaserImg.src = eintrag.teaserBild;
+    teaserImg.alt = `Filmplakat: ${eintrag.filmtitel}`;
+  } else {
+    document.getElementById('accordionTeaser')?.remove();
+  }
+
   // ── Accordion content
   const szeneEl = document.getElementById('szeneText');
   const werEl   = document.getElementById('werText');

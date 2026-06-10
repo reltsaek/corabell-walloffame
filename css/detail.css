@@ -264,6 +264,15 @@
   font-weight: 400;
 }
 .accordion-body.is-open { display: block; }
+.teaser-img {
+  display: block;
+  width: auto;
+  max-width: 75%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
 .accordion-quote {
   font-style: italic;
   color: var(--gold-light);
