@@ -14,7 +14,7 @@
 /* ── Navigation Bar ──────────────────── */
 .detail-nav {
   width: 100%;
-  max-width: 520px;
+  max-width: 676px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -26,7 +26,7 @@
   align-items: center;
   gap: 6px;
   font-family: var(--font-cinzel);
-  font-size: .72rem;
+  font-size: .94rem;
   letter-spacing: .12em;
   color: var(--gold);
   text-decoration: none;
@@ -55,7 +55,7 @@
 /* ── Walk-of-Fame Card ───────────────── */
 .wof-card {
   position: relative;
-  width: min(440px, 192vw);
+  width: min(572px, 92vw);
   aspect-ratio: 2/3;
   background-image: url('../StarFlash_Karten_leer_fuer_Canva/karte_leer_01.png');
   background-size: 100% 100%;
@@ -129,7 +129,7 @@
 }
 /* marquee-sign, marquee-board, marquee-text from base.css */
 .wof-marquee-zone .marquee-text {
-  font-size: clamp(.65rem, 1.6vw, .9rem);
+  font-size: clamp(.85rem, 2.08vw, 1.17rem);
   min-height: 2.6em;
 }
 
@@ -149,7 +149,7 @@
 }
 .wof-info-label {
   font-family: var(--font-cinzel);
-  font-size: clamp(.45rem, 1.1vw, .6rem);
+  font-size: clamp(.77rem, 1.86vw, 1.01rem);
   letter-spacing: .18em;
   color: var(--gold);
   line-height: 1.8;
@@ -171,7 +171,7 @@
 }
 .wof-info-meta {
   font-family: var(--font-cinzel);
-  font-size: clamp(.8rem, 1.1vw, .6rem);
+  font-size: clamp(1.04rem, 1.43vw, .78rem);
   letter-spacing: .12em;
   color: var(--gold);
   display: flex;
@@ -182,7 +182,7 @@
 
 /* ── lovestoryTitel Banner ───────────── */
 .wof-banner-wrap {
-  width: min(440px, 92vw);
+  width: min(572px, 92vw);
   margin-top: 20px;
 
   /* fade in after card */
@@ -200,7 +200,7 @@
 }
 .wof-banner-sign .marquee-text {
   font-family: var(--font-cinzel);
-  font-size: clamp(.78rem, 2.4vw, 1.05rem);
+  font-size: clamp(1.01rem, 3.12vw, 1.37rem);
   letter-spacing: .04em;
   font-weight: 600;
   color: #2a1810;
@@ -210,7 +210,7 @@
 
 /* ── Accordion (Szene & Wer sagt) ────── */
 .wof-accordion {
-  width: min(440px, 92vw);
+  width: min(572px, 92vw);
   margin-top: 24px;
   display: flex;
   flex-direction: column;
@@ -240,7 +240,7 @@
   justify-content: space-between;
   cursor: pointer;
   font-family: var(--font-cinzel);
-  font-size: .72rem;
+  font-size: .94rem;
   letter-spacing: .14em;
   color: var(--gold);
   text-align: left;
@@ -249,7 +249,7 @@
 .accordion-trigger:hover { background: rgba(212,175,95,.12); }
 .accordion-trigger[aria-expanded='true'] { border-bottom: 1px solid var(--gold-dark); }
 .accordion-icon {
-  font-size: .8rem;
+  font-size: 1.04rem;
   transition: transform .3s;
   flex-shrink: 0;
 }
@@ -258,24 +258,33 @@
   display: none;
   padding: 14px 16px;
   font-family: var(--font-cinzel);
-  font-size: .75rem;
+  font-size: .98rem;
   line-height: 1.7;
   color: rgba(245,240,230,.8);
   font-weight: 400;
 }
 .accordion-body.is-open { display: block; }
+.teaser-img {
+  display: block;
+  width: auto;
+  max-width: 75%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
 .accordion-quote {
   font-style: italic;
   color: var(--gold-light);
   border-left: 2px solid var(--gold-dark);
   padding-left: 12px;
   margin-bottom: 10px;
-  font-size: .85rem;
+  font-size: 1.11rem;
 }
 
 /* ── Prev/Next navigation (bottom) ───── */
 .detail-nav-bottom {
-  width: min(440px, 92vw);
+  width: min(572px, 92vw);
   display: flex;
   justify-content: space-between;
   margin-top: 32px;
