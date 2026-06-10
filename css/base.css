@@ -67,6 +67,6 @@ body {
   color: #1a1000;
   text-align: center;
   line-height: 1.45;
-  font-size: clamp(.75rem, 2vw, 1.05rem);
+  font-size: clamp(.98rem, 2.6vw, 1.37rem);
   min-height: 1.5em;
 }
