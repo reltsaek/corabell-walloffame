@@ -46,7 +46,7 @@
 .nav-btn:disabled { opacity: .3; cursor: default; }
 .nav-center {
   font-family: var(--font-cinzel);
-  font-size: .65rem;
+  font-size: .85rem;
   letter-spacing: .18em;
   color: var(--gold-dark);
   text-align: center;
