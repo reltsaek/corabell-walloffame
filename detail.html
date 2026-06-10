@@ -14,37 +14,35 @@
 
   <!-- ── Navigation oben ─────────────── -->
   <nav class="detail-nav" aria-label="Seitennavigation">
-    <button class="nav-btn" id="btnBack" aria-label="Zurück zur Übersicht">
+    <button type="button" class="nav-btn" id="btnBack" aria-label="Zurück zur Übersicht">
       ← Übersicht
     </button>
     <span class="nav-center" id="navCounter">– / –</span>
-    <div style="display:flex;gap:8px;">
-      <button class="nav-btn" id="btnPrev" aria-label="Vorheriger Eintrag">‹</button>
-      <button class="nav-btn" id="btnNext" aria-label="Nächster Eintrag">›</button>
+    <div class="nav-btn-group">
+      <button type="button" class="nav-btn" id="btnPrev" aria-label="Vorheriger Eintrag">‹</button>
+      <button type="button" class="nav-btn" id="btnNext" aria-label="Nächster Eintrag">›</button>
     </div>
   </nav>
+
   <!-- ── lovestoryTitel Banner ─────────── -->
-  <div class="wof-banner-wrap" id="wofBannerWrap" aria-label="Lovestory Kapitel">
+  <div class="wof-banner-wrap" id="wofBannerWrap">
     <div id="bannerBoard"></div>
   </div>
+
   <!-- ── Walk-of-Fame Karte ──────────── -->
   <article class="wof-card" id="wofCard" aria-label="Walk-of-Fame Karte">
 
     <!-- Zone 1: Sternfeld -->
     <div class="wof-star-zone">
-      <!-- Sparkles (JS-generiert) -->
       <div class="sparkles" id="wofSparkles" aria-hidden="true"></div>
-      <!-- Nummer im Sternkreis -->
-      <span class="wof-nr" id="wofNr" aria-label="Nummer">#1</span>
+      <span class="wof-nr" id="wofNr">#1</span>
     </div>
 
     <!-- Zone 2: Marquee-Schild (Zitat) -->
-    <div class="wof-marquee-zone" id="wofMarqueeZone" aria-label="Filmzitat">
-      <!-- JS baut das Marquee-Schild hier ein -->
-    </div>
+    <div class="wof-marquee-zone" id="wofMarqueeZone"></div>
 
     <!-- Zone 3: Infopanel -->
-    <div class="wof-info" aria-label="Filminformationen">
+    <div class="wof-info">
       <p class="wof-info-label">Dieses Zitat ist aus:</p>
       <p class="wof-info-sublabel">THIS PART IS FOR</p>
       <p class="wof-info-filmtitel" id="wofFilmtitel"></p>
@@ -53,47 +51,45 @@
 
   </article>
 
-
-
   <!-- ── Accordion ─────────────────────── -->
   <section class="wof-accordion" id="wofAccordion" aria-label="Weitere Details">
 
     <div class="accordion-item" id="accordionTeaser">
-      <button class="accordion-trigger" aria-expanded="false" aria-controls="teaserBody">
+      <button type="button" id="btnTeaser" class="accordion-trigger" aria-expanded="false" aria-controls="teaserBody">
         <span>Lösung anzeigen</span>
         <span class="accordion-icon" aria-hidden="true">▾</span>
       </button>
-      <div class="accordion-body" id="teaserBody" role="region">
-        <img id="teaserImg" src="" alt="" class="teaser-img">
-      </div>
+      <section class="accordion-body" id="teaserBody" aria-labelledby="btnTeaser">
+        <img id="teaserImg" src="#" alt="" class="teaser-img">
+      </section>
     </div>
 
     <div class="accordion-item" id="accordionSzene">
-      <button class="accordion-trigger" aria-expanded="false" aria-controls="szeneBody">
+      <button type="button" id="btnSzene" class="accordion-trigger" aria-expanded="false" aria-controls="szeneBody">
         <span>Die Szene</span>
         <span class="accordion-icon" aria-hidden="true">▾</span>
       </button>
-      <div class="accordion-body" id="szeneBody" role="region">
+      <section class="accordion-body" id="szeneBody" aria-labelledby="btnSzene">
         <p id="szeneText"></p>
-      </div>
+      </section>
     </div>
 
     <div class="accordion-item" id="accordionWer">
-      <button class="accordion-trigger" aria-expanded="false" aria-controls="werBody">
+      <button type="button" id="btnWer" class="accordion-trigger" aria-expanded="false" aria-controls="werBody">
         <span>Wer sagt's?</span>
         <span class="accordion-icon" aria-hidden="true">▾</span>
       </button>
-      <div class="accordion-body" id="werBody" role="region">
+      <section class="accordion-body" id="werBody" aria-labelledby="btnWer">
         <p id="werText"></p>
-      </div>
+      </section>
     </div>
 
   </section>
 
   <!-- ── Navigation unten ──────────────── -->
   <div class="detail-nav-bottom">
-    <button class="nav-btn" id="btnPrev2" aria-label="Vorheriger Eintrag">← Zurück</button>
-    <button class="nav-btn" id="btnNext2" aria-label="Nächster Eintrag">Weiter →</button>
+    <button type="button" class="nav-btn" id="btnPrev2" aria-label="Vorheriger Eintrag">← Zurück</button>
+    <button type="button" class="nav-btn" id="btnNext2" aria-label="Nächster Eintrag">Weiter →</button>
   </div>
 
 </div><!-- .detail-page -->

@@ -44,6 +44,7 @@
   color: var(--gold-light);
 }
 .nav-btn:disabled { opacity: .3; cursor: default; }
+.nav-btn-group { display: flex; gap: 8px; }
 .nav-center {
   font-family: var(--font-cinzel);
   font-size: .85rem;
