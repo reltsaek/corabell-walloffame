@@ -26,36 +26,42 @@ function buildCard(eintrag, index) {
   a.className = 'teaser-card';
   a.href = `detail.html?id=${eintrag.nr}`;
   a.style.setProperty('--i', index);
-  a.setAttribute('aria-label', `${eintrag.filmtitel} – ${eintrag.lovestoryTitel}`);
+  a.setAttribute('aria-label', `#${eintrag.nr} – ${eintrag.lovestoryTitel}`);
 
-  // Poster image
+  // Poster image (blurred – film stays secret)
   const img = document.createElement('div');
   img.className = 'teaser-img';
-  img.style.backgroundImage = `url('${eintrag.teaserBild}')`;
-  // Fallback gradient if image fails to load
   img.style.backgroundImage =
     `url('${eintrag.teaserBild}'), ` +
     `linear-gradient(145deg, #1a0814 0%, #2a0a1e 40%, #0a0a18 100%)`;
   a.appendChild(img);
 
-  // Top overlay: nr + title + year
+  // Dark overlay to strengthen blur
+  const overlay = document.createElement('div');
+  overlay.className = 'teaser-blur-overlay';
+  a.appendChild(overlay);
+
+  // Top: number only
   const top = document.createElement('div');
   top.className = 'teaser-overlay-top';
-  top.innerHTML = `
-    <span class="teaser-nr">#${eintrag.nr}</span>
-    <div class="teaser-meta">
-      <span class="teaser-title">${eintrag.filmtitel}</span>
-      <span class="teaser-year">${eintrag.jahre}</span>
-    </div>
-  `;
+  top.innerHTML = `<span class="teaser-nr">#${eintrag.nr}</span>`;
   a.appendChild(top);
 
-  // Bottom lovestory label
+  // Center: lovestoryTitel as main focus
+  const center = document.createElement('div');
+  center.className = 'teaser-center';
+  const centerText = document.createElement('span');
+  centerText.className = 'teaser-lovestory-center';
+  centerText.textContent = eintrag.lovestoryTitel;
+  center.appendChild(centerText);
+  a.appendChild(center);
+
+  // Bottom bar: question hint
   const bar = document.createElement('div');
   bar.className = 'teaser-label-bar';
   const label = document.createElement('span');
   label.className = 'teaser-lovestory';
-  label.textContent = truncate(eintrag.lovestoryTitel, 52);
+  label.textContent = 'Welcher Film ist es?';
   bar.appendChild(label);
   a.appendChild(bar);
 

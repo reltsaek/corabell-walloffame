@@ -23,7 +23,7 @@
 }
 .header-kicker {
   font-family: var(--font-cinzel);
-  font-size: clamp(.65rem, 1.5vw, .85rem);
+  font-size: clamp(.85rem, 1.95vw, 1.11rem);
   letter-spacing: .25em;
   color: var(--gold);
   text-transform: uppercase;
@@ -32,7 +32,7 @@
 .header-logo {
   font-family: var(--font-cinzel);
   font-weight: 900;
-  font-size: clamp(2rem, 7vw, 4rem);
+  font-size: clamp(2.6rem, 9.1vw, 5.2rem);
   color: var(--cream);
   letter-spacing: .08em;
   line-height: 1;
@@ -40,7 +40,7 @@
 }
 .header-tagline {
   font-family: var(--font-script);
-  font-size: clamp(1.2rem, 3vw, 2rem);
+  font-size: clamp(1.56rem, 3.9vw, 2.6rem);
   color: var(--gold-light);
   margin-top: 6px;
 }
@@ -90,7 +90,7 @@
 }
 .section-divider-text {
   font-family: var(--font-cinzel);
-  font-size: .7rem;
+  font-size: .91rem;
   letter-spacing: .25em;
   color: var(--gold);
   white-space: nowrap;
@@ -138,15 +138,48 @@ main { padding: 0 20px 60px; }
   box-shadow: 0 0 18px rgba(212,175,95,.35);
 }
 
-/* Poster image */
+/* Poster image – blurred to hide the film */
 .teaser-img {
   position: absolute;
   inset: 0;
   background-size: cover;
   background-position: center top;
-  transition: transform .45s ease;
+  filter: blur(6px);
+  transform: scale(1.1);
+  transition: transform .45s ease, filter .45s ease;
 }
-.teaser-card:hover .teaser-img { transform: scale(1.06); }
+.teaser-card:hover .teaser-img {
+  transform: scale(1.14);
+  filter: blur(4px);
+}
+
+/* Dark overlay over blurred poster */
+.teaser-blur-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(8, 4, 14, 0.52);
+}
+
+/* Centered lovestoryTitel */
+.teaser-center {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 14px 48px;
+  text-align: center;
+  pointer-events: none;
+}
+.teaser-lovestory-center {
+  font-family: var(--font-cinzel);
+  color: var(--gold-light);
+  font-size: clamp(.94rem, 2.34vw, 1.24rem);
+  line-height: 1.5;
+  letter-spacing: .04em;
+  font-variant: small-caps;
+  text-shadow: 0 1px 8px rgba(0,0,0,.9);
+}
 
 /* Top overlay */
 .teaser-overlay-top {
@@ -162,7 +195,7 @@ main { padding: 0 20px 60px; }
   font-family: var(--font-cinzel);
   font-weight: 900;
   color: var(--gold);
-  font-size: .95rem;
+  font-size: 1.61rem;
   line-height: 1;
   white-space: nowrap;
   flex-shrink: 0;
@@ -172,13 +205,13 @@ main { padding: 0 20px 60px; }
   font-family: var(--font-cinzel);
   font-weight: 700;
   color: var(--cream);
-  font-size: .78rem;
+  font-size: 1.01rem;
   line-height: 1.25;
 }
 .teaser-year {
   font-family: var(--font-cinzel);
   color: var(--gold-light);
-  font-size: .62rem;
+  font-size: .81rem;
   letter-spacing: .05em;
 }
 
@@ -197,7 +230,7 @@ main { padding: 0 20px 60px; }
   font-family: var(--font-cinzel);
   font-variant: small-caps;
   color: var(--gold);
-  font-size: .62rem;
+  font-size: 1.05rem;
   line-height: 1.35;
   letter-spacing: .02em;
 }
