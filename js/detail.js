@@ -123,15 +123,39 @@ function navigateTo(nr) {
 function revealSolution() {
   const titleEl = document.getElementById('wofFilmtitel');
   const metaEl  = document.getElementById('wofMeta');
-  if (titleEl && titleEl.dataset.actual) {
-    titleEl.textContent = titleEl.dataset.actual;
-    titleEl.classList.remove('is-solution-hidden');
-    titleEl.classList.add('is-solution-revealed');
-  }
+  if (!titleEl || !titleEl.dataset.actual) return; // already revealed
+
+  // Reveal film title
+  const actual = titleEl.dataset.actual;
+  delete titleEl.dataset.actual;
+  titleEl.textContent = actual;
+  titleEl.classList.remove('is-solution-hidden');
+  titleEl.classList.add('is-solution-revealed');
+
+  // Reveal meta
   if (metaEl && metaEl.dataset.actual) {
     metaEl.innerHTML = metaEl.dataset.actual;
+    delete metaEl.dataset.actual;
     metaEl.classList.remove('is-solution-hidden');
     metaEl.classList.add('is-solution-revealed');
+  }
+
+  // Flash the card
+  const card = document.getElementById('wofCard');
+  if (card) {
+    card.classList.add('is-revealing');
+    card.addEventListener('animationend', () => card.classList.remove('is-revealing'), { once: true });
+  }
+
+  // Open the accordion and update its label
+  const teaserBtn = document.querySelector('#accordionTeaser .accordion-trigger');
+  const teaserBody = document.getElementById('teaserBody');
+  if (teaserBtn) {
+    teaserBtn.querySelector('span:first-child').textContent = 'Filmplakat';
+    if (teaserBtn.getAttribute('aria-expanded') !== 'true') {
+      teaserBtn.setAttribute('aria-expanded', 'true');
+      teaserBody?.classList.add('is-open');
+    }
   }
 }
 
@@ -174,14 +198,18 @@ function render(eintrag) {
   const metaEl  = document.getElementById('wofMeta');
   if (titleEl) {
     titleEl.dataset.actual = eintrag.filmtitel;
-    titleEl.textContent = '???';
-    titleEl.classList.add('is-solution-hidden');
+    titleEl.innerHTML = `
+      <button class="reveal-cta" id="revealBtn" aria-label="Film enthüllen">
+        <span class="reveal-cta-icon">✦</span>
+        <span class="reveal-cta-text">Film enthüllen</span>
+      </button>`;
   }
   if (metaEl) {
     metaEl.dataset.actual =
       `<span class="star-icon">★</span>${eintrag.typ} · ${eintrag.jahre}<span class="star-icon">★</span>`;
     metaEl.classList.add('is-solution-hidden');
   }
+  document.getElementById('revealBtn')?.addEventListener('click', revealSolution);
 
   // ── Sparkles
   const sparklesEl = document.getElementById('wofSparkles');
