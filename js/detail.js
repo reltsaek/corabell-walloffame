@@ -119,6 +119,22 @@ function navigateTo(nr) {
   }
 }
 
+/* ── Reveal solution ─────────────────── */
+function revealSolution() {
+  const titleEl = document.getElementById('wofFilmtitel');
+  const metaEl  = document.getElementById('wofMeta');
+  if (titleEl && titleEl.dataset.actual) {
+    titleEl.textContent = titleEl.dataset.actual;
+    titleEl.classList.remove('is-solution-hidden');
+    titleEl.classList.add('is-solution-revealed');
+  }
+  if (metaEl && metaEl.dataset.actual) {
+    metaEl.innerHTML = metaEl.dataset.actual;
+    metaEl.classList.remove('is-solution-hidden');
+    metaEl.classList.add('is-solution-revealed');
+  }
+}
+
 /* ── Accordion ───────────────────────── */
 function setupAccordion() {
   document.querySelectorAll('.accordion-trigger').forEach(btn => {
@@ -127,6 +143,10 @@ function setupAccordion() {
       btn.setAttribute('aria-expanded', String(!expanded));
       const body = btn.nextElementSibling;
       if (body) body.classList.toggle('is-open', !expanded);
+
+      if (!expanded && btn.closest('#accordionTeaser')) {
+        revealSolution();
+      }
     });
   });
 }
@@ -149,12 +169,19 @@ function render(eintrag) {
     typewrite(textEl, eintrag.zitat);
   }
 
-  // ── Info panel
+  // ── Info panel (hidden until solution is revealed)
   const titleEl = document.getElementById('wofFilmtitel');
   const metaEl  = document.getElementById('wofMeta');
-  if (titleEl) titleEl.textContent = eintrag.filmtitel;
-  if (metaEl)  metaEl.innerHTML =
-    `<span class="star-icon">★</span>${eintrag.typ} · ${eintrag.jahre}<span class="star-icon">★</span>`;
+  if (titleEl) {
+    titleEl.dataset.actual = eintrag.filmtitel;
+    titleEl.textContent = '???';
+    titleEl.classList.add('is-solution-hidden');
+  }
+  if (metaEl) {
+    metaEl.dataset.actual =
+      `<span class="star-icon">★</span>${eintrag.typ} · ${eintrag.jahre}<span class="star-icon">★</span>`;
+    metaEl.classList.add('is-solution-hidden');
+  }
 
   // ── Sparkles
   const sparklesEl = document.getElementById('wofSparkles');

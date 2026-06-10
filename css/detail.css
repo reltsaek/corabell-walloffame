@@ -273,6 +273,26 @@
   border-radius: 2px;
 }
 
+/* Solution hidden state */
+.wof-info-filmtitel.is-solution-hidden {
+  opacity: .3;
+  letter-spacing: .25em;
+  color: var(--gold-dark);
+}
+.wof-info-meta.is-solution-hidden {
+  display: none;
+}
+
+/* Reveal animation */
+@keyframes solutionReveal {
+  from { opacity: 0; transform: translateY(8px) scale(.97); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+.wof-info-filmtitel.is-solution-revealed,
+.wof-info-meta.is-solution-revealed {
+  animation: solutionReveal .6s cubic-bezier(.22,1,.36,1) forwards;
+}
+
 .accordion-quote {
   font-style: italic;
   color: var(--gold-light);
