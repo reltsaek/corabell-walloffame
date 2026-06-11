@@ -272,13 +272,11 @@ function render(eintrag) {
     document.getElementById('accordionWer')?.remove();
   }
 
-  // ── Animate in (trigger after paint)
+  // ── Animate in: Banner → Karte → Accordion
   requestAnimationFrame(() => {
-    setTimeout(() => {
-      document.getElementById('wofCard')?.classList.add('is-visible');
-      document.getElementById('wofBannerWrap')?.classList.add('is-visible');
-      document.getElementById('wofAccordion')?.classList.add('is-visible');
-    }, 80);
+    setTimeout(() => document.getElementById('wofBannerWrap')?.classList.add('is-visible'),   80);
+    setTimeout(() => document.getElementById('wofCard')?.classList.add('is-visible'),        800);
+    setTimeout(() => document.getElementById('wofAccordion')?.classList.add('is-visible'),  1700);
   });
 }
 
