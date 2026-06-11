@@ -230,23 +230,50 @@ function showFinal() {
     showScreen('welcome');
   });
   document.getElementById('btnSave').addEventListener('click', saveResult);
+  document.getElementById('resultEmail').addEventListener('input', () => {
+    document.getElementById('resultEmail').classList.remove('is-invalid');
+  });
 }
 
-/* ── Send result via e-mail ─────────────────────── */
-function saveResult() {
+const SHEET_URL = 'https://script.google.com/macros/s/AKfycbzrQmj2PZP7dHUIeNlJL8lAmJecWB11_DWJ2Bt2LO2D1Q1h2D8VonRHKAuaTpgY0vrUKA/exec';
+
+/* ── Save result to Google Sheet ────────────────── */
+async function saveResult() {
   const total = state.questions.length;
   const maxScore = total * POINTS_CORRECT;
-  const replyEmail = document.getElementById('resultEmail').value.trim();
+  const emailInput = document.getElementById('resultEmail');
+  const email = emailInput.value.trim();
+  const btn = document.getElementById('btnSave');
 
-  const subject = encodeURIComponent(`${state.playerName} – ${state.score} Punkte`);
+  // E-Mail validieren (nur wenn ausgefüllt)
+  if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    emailInput.classList.add('is-invalid');
+    emailInput.focus();
+    return;
+  }
+  emailInput.classList.remove('is-invalid');
 
-  let body = `Quizteilname Corabell\n\n`;
-  body += `Name:               ${state.playerName}\n`;
-  body += `Richtige Antworten: ${state.correctCount} / ${total}\n`;
-  body += `Gesamtpunktzahl:    ${state.score} / ${maxScore} Punkte\n`;
-  if (replyEmail) body += `\nE-Mail: ${replyEmail}\n`;
+  btn.disabled = true;
+  btn.textContent = 'Wird gespeichert…';
 
-  window.location.href = `mailto:hochzeit@kaestler.de?subject=${subject}&body=${encodeURIComponent(body)}`;
+  try {
+    await fetch(SHEET_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        name: state.playerName,
+        correctAnswers: state.correctCount,
+        score: state.score,
+        maxScore,
+        email
+      })
+    });
+    btn.textContent = '✓ Gespeichert';
+  } catch (err) {
+    btn.textContent = 'Fehler – bitte nochmal';
+    btn.disabled = false;
+  }
 }
 
 /* ── Global event bindings ──────────────────────── */

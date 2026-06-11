@@ -76,6 +76,18 @@
   border-color: var(--gold);
   background: rgba(212, 175, 95, .1);
 }
+.form-input.is-invalid {
+  border-color: #c0392b;
+  background: rgba(192, 57, 43, .08);
+  animation: shake .35s cubic-bezier(.36,.07,.19,.97);
+}
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%       { transform: translateX(-6px); }
+  40%       { transform: translateX(6px); }
+  60%       { transform: translateX(-4px); }
+  80%       { transform: translateX(4px); }
+}
 
 .btn-start {
   width: 100%;
