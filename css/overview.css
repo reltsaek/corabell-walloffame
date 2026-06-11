@@ -183,6 +183,9 @@ main { padding: 0 20px 60px; }
   letter-spacing: .04em;
   font-variant: small-caps;
   text-shadow: 0 1px 8px rgba(0,0,0,.9);
+  background: radial-gradient(ellipse at center, rgba(6,2,12,.9) 0%, rgba(6,2,12,.6) 60%, transparent 100%);
+  padding: 14px 20px;
+  border-radius: 3px;
 }
 
 /* Top overlay */

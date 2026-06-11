@@ -24,67 +24,80 @@
     </div>
   </nav>
 
-  <!-- ── lovestoryTitel Banner ─────────── -->
+  <!-- ── Banner über beiden Spalten ───── -->
   <div class="wof-banner-wrap" id="wofBannerWrap">
     <div id="bannerBoard"></div>
   </div>
 
-  <!-- ── Walk-of-Fame Karte ──────────── -->
-  <article class="wof-card" id="wofCard" aria-label="Walk-of-Fame Karte">
+  <!-- ── Zweispaltiges Layout ──────────── -->
+  <div class="detail-columns">
 
-    <!-- Zone 1: Sternfeld -->
-    <div class="wof-star-zone">
-      <div class="sparkles" id="wofSparkles" aria-hidden="true"></div>
-      <span class="wof-nr" id="wofNr">#1</span>
-    </div>
+    <!-- Linke Spalte: Karte -->
+    <div class="detail-col-left">
 
-    <!-- Zone 2: Marquee-Schild (Zitat) -->
-    <div class="wof-marquee-zone" id="wofMarqueeZone"></div>
+      <article class="wof-card" id="wofCard" aria-label="Walk-of-Fame Karte">
 
-    <!-- Zone 3: Infopanel -->
-    <div class="wof-info">
-      <p class="wof-info-label">Dieses Zitat ist aus:</p>
-      <p class="wof-info-sublabel">THIS PART IS FOR</p>
-      <p class="wof-info-filmtitel" id="wofFilmtitel"></p>
-      <p class="wof-info-meta" id="wofMeta"></p>
-    </div>
+        <!-- Zone 1: Sternfeld -->
+        <div class="wof-star-zone">
+          <div class="sparkles" id="wofSparkles" aria-hidden="true"></div>
+          <span class="wof-nr" id="wofNr">#1</span>
+        </div>
 
-  </article>
+        <!-- Zone 2: Marquee-Schild (Zitat) -->
+        <div class="wof-marquee-zone" id="wofMarqueeZone"></div>
 
-  <!-- ── Accordion ─────────────────────── -->
-  <section class="wof-accordion" id="wofAccordion" aria-label="Weitere Details">
+        <!-- Zone 3: Infopanel -->
+        <div class="wof-info">
+          <p class="wof-info-label">Dieses Zitat ist aus:</p>
+          <p class="wof-info-sublabel">THIS PART IS FOR</p>
+          <p class="wof-info-filmtitel" id="wofFilmtitel"></p>
+          <p class="wof-info-meta" id="wofMeta"></p>
+        </div>
 
-    <div class="accordion-item" id="accordionTeaser">
-      <button type="button" id="btnTeaser" class="accordion-trigger" aria-expanded="false" aria-controls="teaserBody">
-        <span>Lösung anzeigen</span>
-        <span class="accordion-icon" aria-hidden="true">▾</span>
-      </button>
-      <section class="accordion-body" id="teaserBody" aria-labelledby="btnTeaser">
-        <img id="teaserImg" src="#" alt="" class="teaser-img">
+      </article>
+
+    </div><!-- .detail-col-left -->
+
+    <!-- Rechte Spalte: Accordion -->
+    <div class="detail-col-right">
+
+      <section class="wof-accordion" id="wofAccordion" aria-label="Weitere Details">
+
+        <div class="accordion-item" id="accordionTeaser">
+          <button type="button" id="btnTeaser" class="accordion-trigger" aria-expanded="false" aria-controls="teaserBody">
+            <span>Lösung anzeigen</span>
+            <span class="accordion-icon" aria-hidden="true">▾</span>
+          </button>
+          <section class="accordion-body" id="teaserBody" aria-labelledby="btnTeaser">
+            <img id="teaserImg" src="#" alt="" class="teaser-img">
+          </section>
+        </div>
+
+        <div class="accordion-item" id="accordionSzene">
+          <button type="button" id="btnSzene" class="accordion-trigger" aria-expanded="false" aria-controls="szeneBody">
+            <span>Die Szene</span>
+            <span class="accordion-icon" aria-hidden="true">▾</span>
+          </button>
+          <section class="accordion-body" id="szeneBody" aria-labelledby="btnSzene">
+            <p id="szeneText"></p>
+          </section>
+        </div>
+
+        <div class="accordion-item" id="accordionWer">
+          <button type="button" id="btnWer" class="accordion-trigger" aria-expanded="false" aria-controls="werBody">
+            <span>Wer sagt's?</span>
+            <span class="accordion-icon" aria-hidden="true">▾</span>
+          </button>
+          <section class="accordion-body" id="werBody" aria-labelledby="btnWer">
+            <p id="werText"></p>
+          </section>
+        </div>
+
       </section>
-    </div>
 
-    <div class="accordion-item" id="accordionSzene">
-      <button type="button" id="btnSzene" class="accordion-trigger" aria-expanded="false" aria-controls="szeneBody">
-        <span>Die Szene</span>
-        <span class="accordion-icon" aria-hidden="true">▾</span>
-      </button>
-      <section class="accordion-body" id="szeneBody" aria-labelledby="btnSzene">
-        <p id="szeneText"></p>
-      </section>
-    </div>
+    </div><!-- .detail-col-right -->
 
-    <div class="accordion-item" id="accordionWer">
-      <button type="button" id="btnWer" class="accordion-trigger" aria-expanded="false" aria-controls="werBody">
-        <span>Wer sagt's?</span>
-        <span class="accordion-icon" aria-hidden="true">▾</span>
-      </button>
-      <section class="accordion-body" id="werBody" aria-labelledby="btnWer">
-        <p id="werText"></p>
-      </section>
-    </div>
-
-  </section>
+  </div><!-- .detail-columns -->
 
   <!-- ── Navigation unten ──────────────── -->
   <div class="detail-nav-bottom">
