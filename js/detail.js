@@ -159,6 +159,30 @@ function revealSolution() {
   }
 }
 
+/* ── Swipe navigation (mobile) ──────── */
+function setupSwipe(currentNr) {
+  let startX = 0;
+  let startY = 0;
+
+  document.addEventListener('touchstart', e => {
+    startX = e.touches[0].clientX;
+    startY = e.touches[0].clientY;
+  }, { passive: true });
+
+  document.addEventListener('touchend', e => {
+    const dx = e.changedTouches[0].clientX - startX;
+    const dy = e.changedTouches[0].clientY - startY;
+    if (Math.abs(dx) < 40 || Math.abs(dx) < Math.abs(dy) * 1.5) return;
+    if (dx < 0) {
+      const next = getNext(currentNr);
+      if (next) navigateTo(next.nr);
+    } else {
+      const prev = getPrev(currentNr);
+      if (prev) navigateTo(prev.nr);
+    }
+  }, { passive: true });
+}
+
 /* ── Accordion ───────────────────────── */
 function setupAccordion() {
   document.querySelectorAll('.accordion-trigger').forEach(btn => {
@@ -274,6 +298,7 @@ async function init() {
   render(eintrag);
   setupNav(nr);
   setupAccordion();
+  setupSwipe(nr);
 }
 
 document.addEventListener('DOMContentLoaded', init);
