@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wall of Fame · Quiz</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/overview.css">
+  <link rel="stylesheet" href="css/quiz.css">
+</head>
+<body>
+<header class="site-header">
+  <div id="headerDeco" class="header-deco" aria-hidden="true"></div>
+  <div class="header-titles">
+    <p class="header-kicker">Corabell Magazin · Spezialausgabe</p>
+    <h1 class="header-logo">Wall of Fame</h1>
+    <p class="header-tagline">Highlight-Reel einer Lovestory ♥</p>
+  </div>
+
+</header>
+
+<div class="quiz-page">
+  <!-- WELCOME SCREEN -->
+  <div id="welcome" class="quiz-screen">
+    <h1 class="quiz-title">Das Film Quiz</h1>
+    <div class="section-divider" aria-hidden="true">
+      <span class="section-divider-text">Erkennst du die Filme?</span>
+    </div>
+    <form id="welcomeForm" class="welcome-form">
+      <label for="playerName" class="form-label">Dein Name</label>
+      <input
+        type="text"
+        id="playerName"
+        class="form-input"
+        placeholder="Dein Name"
+        required
+        autocomplete="off"
+      >
+      <button type="submit" class="btn-start">Quiz starten ✦</button>
+    </form>
+  </div>
+
+  <!-- QUESTION SCREEN -->
+  <div id="question" class="quiz-screen" hidden>
+    <div class="question-header">
+      <span id="qProgress" class="q-progress">Frage 1 / 10</span>
+      <span id="qScore" class="q-score">0 Punkte</span>
+    </div>
+    <div class="progress-track">
+      <div id="progressBar" class="progress-fill" style="width:0%"></div>
+    </div>
+
+    <div id="qZitatBoard" class="q-zitat-board"></div>
+<br />
+    <div class="section-divider" aria-hidden="true">
+      <span class="section-divider-text">Aus welchem Film stammt dieses Zitat?</span>
+    </div>
+
+    <div id="qOptions" class="options-grid"></div>
+
+    <div id="qFeedback" class="quiz-feedback" hidden></div>
+
+    <div class="quiz-actions">
+      <button type="button" id="btnNext" hidden>Nächste Frage →</button>
+    </div>
+  </div>
+
+  <!-- FINAL SCREEN -->
+  <div id="final" class="quiz-screen" hidden>
+    <h2 class="final-heading">Quiz beendet!</h2>
+    <p class="final-congrats">Herzlichen Glückwunsch, <span id="finalName"></span>!</p>
+
+    <div class="final-stats">
+      <div class="stat-box">
+        <span class="stat-label">Richtige Antworten</span>
+        <span id="finalCorrect" class="stat-value"></span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-label">Gesamtpunktzahl</span>
+        <span id="finalScore" class="stat-value"></span>
+      </div>
+    </div>
+
+    <div class="final-score-bar">
+      <div class="progress-track">
+        <div id="finalBar" class="progress-fill" style="width:0%"></div>
+      </div>
+    </div>
+
+    <p id="finalRating" class="final-rating"></p>
+
+    <div class="final-save">
+      <label for="resultEmail" class="form-label">Deine E-Mail (optional, wird mit gesendet)</label>
+      <input
+        type="email"
+        id="resultEmail"
+        class="form-input"
+        placeholder="deine@email.de"
+      >
+      <button type="button" id="btnSave">Speichern</button>
+    </div>
+
+    <button type="button" id="btnRetry" class="btn-retry">Nochmal spielen</button>
+  </div>
+
+</div>
+<script src="js/data.js"></script>
+<script src="js/quiz.js"></script>
+</body>
+</html>

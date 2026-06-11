@@ -2,33 +2,6 @@
    DETAIL PAGE
    ══════════════════════════════════════════ */
 
-/* ── Helpers ─────────────────────────── */
-function buildBulbRow(count) {
-  const row = document.createElement('div');
-  row.className = 'bulb-row';
-  for (let i = 0; i < count; i++) {
-    const b = document.createElement('span');
-    b.className = 'bulb';
-    row.appendChild(b);
-  }
-  return row;
-}
-
-function buildMarqueeSign(textContent, bulbCount = 18) {
-  const sign = document.createElement('div');
-  sign.className = 'marquee-sign';
-  sign.appendChild(buildBulbRow(bulbCount));
-  const board = document.createElement('div');
-  board.className = 'marquee-board';
-  const txt = document.createElement('div');
-  txt.className = 'marquee-text';
-  txt.setAttribute('aria-label', textContent);
-  board.appendChild(txt);
-  sign.appendChild(board);
-  sign.appendChild(buildBulbRow(bulbCount));
-  return { sign, textEl: txt };
-}
-
 /* ── Typewriter effect ───────────────── */
 function typewrite(el, text, onDone) {
   const msPerChar = Math.max(18, Math.min(38, 2200 / text.length));
@@ -81,7 +54,7 @@ function setupNav(currentNr) {
     const el = document.getElementById(id);
     if (!el) return;
     if (id === 'btnBack') {
-      el.addEventListener('click', () => { window.location.href = 'index.html'; });
+      el.addEventListener('click', () => { window.location.href = 'gallery.html'; });
     } else if (id === 'btnPrev') {
       if (prev) el.addEventListener('click', () => navigateTo(prev.nr));
       else el.disabled = true;

@@ -9,36 +9,56 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/overview.css">
+  <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
 
   <header class="site-header">
-    <!-- Dekorative Lauflicht-Reihe -->
     <div id="headerDeco" class="header-deco" aria-hidden="true"></div>
-
     <div class="header-titles">
       <p class="header-kicker">Corabell Magazin · Spezialausgabe</p>
       <h1 class="header-logo">Wall of Fame</h1>
       <p class="header-tagline">Highlight-Reel einer Lovestory ♥</p>
     </div>
-
-    <!-- Hero-Foto -->
     <div class="hero-photo">
       <img src="restetst/test.png" alt="Corabell – Ein Abend voller Erinnerungen">
     </div>
   </header>
 
-  <main>
+  <main class="home-main">
+
     <div class="section-divider" aria-hidden="true">
-      <span class="section-divider-text">★ &nbsp; Die Filmstationen &nbsp; ★</span>
+      <span class="section-divider-text">★ &nbsp; Was möchtest du tun? &nbsp; ★</span>
     </div>
 
-    <ul class="card-grid" id="cardGrid">
-      <!-- Karten werden per JS eingefügt -->
-    </ul>
+    <div class="choice-grid">
+
+      <a href="quiz.html" class="choice-card">
+        <div class="choice-deco" aria-hidden="true"></div>
+        <span class="choice-icon">✦</span>
+        <h2 class="choice-title">Filmquiz starten</h2>
+        <p class="choice-desc">Erkennst du die Filme hinter den Zitaten? Teste dein Wissen und sammle Punkte.</p>
+        <span class="choice-btn">Quiz starten →</span>
+      </a>
+
+      <a href="gallery.html" class="choice-card">
+        <div class="choice-deco" aria-hidden="true"></div>
+        <span class="choice-icon">◈</span>
+        <h2 class="choice-title">Filmgalerie durchstöbern</h2>
+        <p class="choice-desc">Entdecke alle Filmstationen unserer Lovestory – mit Zitaten, Szenen und Hintergründen.</p>
+        <span class="choice-btn">Zur Galerie →</span>
+      </a>
+
+    </div>
+
   </main>
 
   <script src="js/data.js"></script>
-  <script src="js/overview.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const deco = document.getElementById('headerDeco');
+      if (deco) { deco.innerHTML = ''; deco.appendChild(buildBulbRow(36)); }
+    });
+  </script>
 </body>
 </html>
