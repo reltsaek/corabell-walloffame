@@ -148,13 +148,13 @@ main { padding: 0 20px 60px; }
   inset: 0;
   background-size: cover;
   background-position: center top;
-  filter: blur(6px);
+  filter: blur(7.8px);
   transform: scale(1.1);
   transition: transform .45s ease, filter .45s ease;
 }
 .teaser-card:hover .teaser-img {
   transform: scale(1.14);
-  filter: blur(4px);
+  filter: blur(5.2px);
 }
 
 /* Dark overlay over blurred poster */
