@@ -54,7 +54,7 @@ function setupNav(currentNr) {
     const el = document.getElementById(id);
     if (!el) return;
     if (id === 'btnBack') {
-      el.addEventListener('click', () => { window.location.href = 'index.html'; });
+      el.addEventListener('click', () => { window.location.href = 'gallery.html'; });
     } else if (id === 'btnPrev') {
       if (prev) el.addEventListener('click', () => navigateTo(prev.nr));
       else el.disabled = true;
