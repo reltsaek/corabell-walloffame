@@ -3,6 +3,14 @@
 .site-header .hero-photo { display: none; }
 .site-header .header-tagline {  }
 
+/* ── Top bar ─────────────────────────────────────── */
+.quiz-topbar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding: 16px 0 0;
+}
+
 /* ── Quiz page layout ────────────────────────────── */
 .quiz-page {
   display: flex;
@@ -234,9 +242,6 @@
   font-size: 1rem;
   letter-spacing: .05em;
   line-height: 1.6;
-  display: flex;
-  gap: 20px;
-  align-items: flex-start;
   animation: feedbackReveal .4s cubic-bezier(.22,1,.36,1) forwards;
 }
 @keyframes feedbackReveal {
@@ -257,6 +262,45 @@
   flex-shrink: 0;
   box-shadow: 0 4px 16px rgba(0,0,0,.5);
   animation: posterReveal .9s cubic-bezier(.22,1,.36,1) .1s both;
+}
+
+/* Poster + result text row */
+.feedback-main {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* Details block below */
+.feedback-details {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(212,175,95,.15);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.feedback-szene {
+  font-family: var(--font-cinzel);
+  font-size: .82rem;
+  line-height: 1.7;
+  color: rgba(245,240,230,.7);
+  letter-spacing: .03em;
+}
+.feedback-wer {
+  font-family: var(--font-cinzel);
+  font-size: .8rem;
+  line-height: 1.6;
+  color: rgba(245,240,230,.55);
+  letter-spacing: .03em;
+}
+.feedback-wer-label {
+  color: var(--gold-dark);
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  font-size: .7rem;
+  margin-right: 4px;
 }
 
 .quiz-feedback.is-correct {

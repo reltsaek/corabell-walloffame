@@ -154,12 +154,20 @@ function confirmAnswer() {
   const posterHTML = eintrag.teaserBild
     ? `<img src="${eintrag.teaserBild}" alt="Filmplakat: ${correctOpt.filmtitel}" class="feedback-poster">`
     : '';
+  const szeneHTML = eintrag.szeneBeschreibung
+    ? `<p class="feedback-szene">${eintrag.szeneBeschreibung}</p>`
+    : '';
+  const werHTML = eintrag.werSagt
+    ? `<p class="feedback-wer"><span class="feedback-wer-label">Wer sagt's?</span> ${eintrag.werSagt}</p>`
+    : '';
+  const detailsHTML = `<div class="feedback-details">${szeneHTML}${werHTML}</div>`;
+
   if (isCorrect) {
     feedback.classList.add('is-correct');
-    feedback.innerHTML = `<div class="feedback-text"><strong>Richtig!</strong> +${POINTS_CORRECT} Punkte</div>${posterHTML}`;
+    feedback.innerHTML = `<div class="feedback-main"><div class="feedback-text"><strong>Richtig!</strong> +${POINTS_CORRECT} Punkte</div>${posterHTML}</div>${detailsHTML}`;
   } else {
     feedback.classList.add('is-wrong');
-    feedback.innerHTML = `<div class="feedback-text"><strong>Leider falsch.</strong> Die richtige Antwort war:<br><em>${correctOpt.filmtitel} (${correctOpt.jahre})</em></div>${posterHTML}`;
+    feedback.innerHTML = `<div class="feedback-main"><div class="feedback-text"><strong>Leider falsch.</strong> Die richtige Antwort war:<br><em>${correctOpt.filmtitel} (${correctOpt.jahre})</em></div>${posterHTML}</div>${detailsHTML}`;
   }
 
   // Update score display
