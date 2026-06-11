@@ -166,7 +166,7 @@
 .wof-info-filmtitel {
   font-family: var(--font-script);
   color: var(--cream);
-  font-size: clamp(1.55rem, 5.5vw, 2.7rem);
+  font-size: clamp(2.02rem, 7.15vw, 3.51rem);
   line-height: 1.1;
   margin: 0.3em 0;
 }
