@@ -20,7 +20,11 @@
       "zitat": "Ein Mann, der die Welt verändern will – mit einem Auto, das denken kann.",
       "werSagt": "Wilton Knight (gesprochen von Richard Basehart) – der Gründer der Foundation FLAG.",
       "szeneBeschreibung": "Aus dem ikonischen Vorspann der Serie: Wilton Knight gibt Michael Knight (David Hasselhoff) seine Mission mit auf den Weg – ein Mann, der mit Hilfe seines Wunderautos K.I.T.T. für Gerechtigkeit kämpft.",
-      "teaserBild": "images/teaser/poster-1.jpg"
+      "teaserBild": "images/teaser/poster-1.jpg",
+      "falscheAntworten": [
+        { "filmtitel": "Das A-Team", "jahre": "1983 – 1987" },
+        { "filmtitel": "Airwolf", "jahre": "1984 – 1987" }
+      ]
     },
     {
       "nr": 2,
@@ -33,7 +37,11 @@
       "zitat": "Ich bin doch nur ein Mädchen, das vor einem Jungen steht und ihn bittet, es zu lieben.",
       "werSagt": "Anna Scott, gespielt von Julia Roberts.",
       "szeneBeschreibung": "Die berühmteste Szene des Films: Anna Scott, eine weltberühmte Hollywood-Schauspielerin, kommt in den Londoner Buchladen von William Thacker (Hugh Grant) und gesteht ihm ihre Liebe – verkleidet als ganz normale junge Frau, die nicht als Star, sondern als Mensch geliebt werden möchte.",
-      "teaserBild": "images/teaser/poster-2.jpg"
+      "teaserBild": "images/teaser/poster-2.jpg",
+      "falscheAntworten": [
+        { "filmtitel": "Schlaflos in Seattle", "jahre": "1993" },
+        { "filmtitel": "Bridget Jones – Schokolade zum Frühstück", "jahre": "2001" }
+      ]
     },
     {
       "nr": 3,
@@ -42,11 +50,15 @@
       "typ": "Film",
       "jahre": "2001",
       "jahr": 2001,
-      "lovestoryTitel": "Ostern 2003 – „Ralf der tollkühne Held”",
+      "lovestoryTitel": "Ostern 2003 – „Ralf der tollkühne Held“",
       "zitat": "So ist es nun mal – bis zur wahren Liebe erster Kuss.",
       "werSagt": "Der Märchenbuch-Erzähler bzw. Shrek selbst (im Original: Mike Myers; deutsche Synchronstimme: Sky du Mont).",
       "szeneBeschreibung": "Im animierten Vorspann des Films liest Shrek aus einem alten Märchenbuch vor: Eine Prinzessin (Fiona, später gesprochen von Cameron Diaz / dt. Esther Schweins) sitzt in einem Turm und wartet auf den ersten Kuss der wahren Liebe, der den Fluch lösen soll. Am Ende erfüllt sich das Märchen – nur eben anders als gedacht.",
-      "teaserBild": "images/teaser/poster-3.jpg"
+      "teaserBild": "images/teaser/poster-3.jpg",
+      "falscheAntworten": [
+        { "filmtitel": "Monsters, Inc.", "jahre": "2001" },
+        { "filmtitel": "Ice Age", "jahre": "2002" }
+      ]
     },
     {
       "nr": 4,
@@ -59,7 +71,11 @@
       "zitat": "Ich hab's wenigstens versucht, verdammt nochmal.",
       "werSagt": "Randle Patrick McMurphy, gespielt von Jack Nicholson (Oscar als Bester Hauptdarsteller).",
       "szeneBeschreibung": "Eine der berühmtesten Szenen: McMurphy versucht, einen schweren marmornen Hydrotherapietisch aus dem Boden zu reißen, um damit das Fenster der Psychiatrie einzuschlagen und in eine Bar zu entkommen, um die Baseball-Endspiele zu sehen. Er scheitert kläglich – sagt aber stolz diesen Satz zu seinen sprachlosen Mitinsassen.",
-      "teaserBild": "images/teaser/poster-4.jpg"
+      "teaserBild": "images/teaser/poster-4.jpg",
+      "falscheAntworten": [
+        { "filmtitel": "Taxi Driver", "jahre": "1976" },
+        { "filmtitel": "Der Pate", "jahre": "1972" }
+      ]
     },
     {
       "nr": 5,
@@ -68,11 +84,15 @@
       "typ": "Film",
       "jahre": "1989",
       "jahr": 1989,
-      "lovestoryTitel": "2007 – „Hallo, ich bin neu hier” – die Geburt des ersten Sohnes",
+      "lovestoryTitel": "2007 – „Hallo, ich bin neu hier“ – die Geburt des ersten Sohnes",
       "zitat": "Oh Mann, ist das hell hier draußen! Und wer sind diese ganzen Riesen?",
       "werSagt": "Baby Mikey – in der Originalfassung gesprochen von Bruce Willis, in der deutschen Synchronfassung von Thomas Gottschalk.",
       "szeneBeschreibung": "Die Geburtsszene: Mollie (Kirstie Alley) wird vom Taxifahrer James (John Travolta) ins Krankenhaus gefahren und bringt Baby Mikey zur Welt. Dabei hört das Publikum erstmals die kessen inneren Gedanken des Babys – ein Markenzeichen des Films.",
-      "teaserBild": "images/teaser/poster-5.jpg"
+      "teaserBild": "images/teaser/poster-5.jpg",
+      "falscheAntworten": [
+        { "filmtitel": "Kevin – Allein zu Haus", "jahre": "1990" },
+        { "filmtitel": "Baby Boom", "jahre": "1987" }
+      ]
     },
     {
       "nr": 6,
@@ -81,11 +101,15 @@
       "typ": "Film",
       "jahre": "1998",
       "jahr": 1998,
-      "lovestoryTitel": "2008 – „Verrückt nach Platz”: Umzug in die Theo-Neubauer-Straße",
+      "lovestoryTitel": "2008 – „Verrückt nach Platz“: Umzug in die Theo-Neubauer-Straße",
       "zitat": "Echte Liebe ist, wenn du den anderen auch dann noch magst, wenn er dich nervt.",
       "werSagt": "Frei nach dem Geist des Films rund um Ted (Ben Stiller), Mary (Cameron Diaz) und Pat Healy (Matt Dillon).",
       "szeneBeschreibung": "Die Farrelly-Brothers-Komödie über Ted, der 13 Jahre lang von seiner Highschool-Liebe Mary träumt. Trotz aller Hindernisse (peinlicher Reißverschluss-Unfall, schmieriger Detektiv, verrückte Nebenbuhler) finden die beiden am Ende zueinander – wahre Liebe trotz aller verrückten Begleitumstände.",
-      "teaserBild": "images/teaser/poster-6.jpg"
+      "teaserBild": "images/teaser/poster-6.jpg",
+      "falscheAntworten": [
+        { "filmtitel": "American Pie", "jahre": "1999" },
+        { "filmtitel": "Lügen haben lange Beine", "jahre": "1996" }
+      ]
     },
     {
       "nr": 7,
@@ -94,11 +118,15 @@
       "typ": "Film",
       "jahre": "2003",
       "jahr": 2003,
-      "lovestoryTitel": "2010 – „Findet Emil”: Die Geburt des zweiten Sohns",
+      "lovestoryTitel": "2010 – „Findet Emil“: Die Geburt des zweiten Sohns",
       "zitat": "Einfach schwimmen, einfach schwimmen, schwimmen, schwimmen.",
       "werSagt": "Dory, der vergessliche Doktorfisch – im Original gesprochen von Ellen DeGeneres, in der deutschen Fassung von Anke Engelke.",
       "szeneBeschreibung": "Marlin (Albert Brooks / dt. Christian Tramitz), der verzweifelte Clownfisch-Vater auf der Suche nach seinem Sohn Nemo, ist frustriert und verliert die Hoffnung. Dory singt ihm ihr berühmtes Mantra als kleines Lebensmotto vor: Egal wie schwer es wird, einfach weitermachen!",
-      "teaserBild": "images/teaser/poster-7.jpg"
+      "teaserBild": "images/teaser/poster-7.jpg",
+      "falscheAntworten": [
+        { "filmtitel": "Monsters, Inc.", "jahre": "2001" },
+        { "filmtitel": "Die Unglaublichen", "jahre": "2004" }
+      ]
     },
     {
       "nr": 8,
@@ -107,11 +135,15 @@
       "typ": "Film",
       "jahre": "1997",
       "jahr": 1997,
-      "lovestoryTitel": "2017 – „Die Hochzeit meiner besten Freunde”: Verlobung mit Ansage",
+      "lovestoryTitel": "2017 – „Die Hochzeit meiner besten Freunde“: Verlobung mit Ansage",
       "zitat": "Oh mein Gott, ich will nicht sterben, ohne verlobt zu sein!",
       "werSagt": "Julianne Potter, gespielt von Julia Roberts – Restaurant-Kritikerin und beste Freundin des Bräutigams.",
       "szeneBeschreibung": "Julianne erfährt, dass ihr bester Freund Michael (Dermot Mulroney) plötzlich heiraten will – und zwar nicht sie, sondern die hübsche Kimmy (Cameron Diaz). Julianne erkennt, dass sie selbst in Michael verliebt ist, und gerät in Panik wegen ihres bevorstehenden 28. Geburtstags und dem alten Pakt der beiden, einander zu heiraten, falls sie bis dahin Single sind.",
-      "teaserBild": "images/teaser/poster-8.jpg"
+      "teaserBild": "images/teaser/poster-8.jpg",
+      "falscheAntworten": [
+        { "filmtitel": "Vier Hochzeiten und ein Todesfall", "jahre": "1994" },
+        { "filmtitel": "Runaway Bride – Verliebt, verlobt, weggelaufen", "jahre": "1999" }
+      ]
     },
     {
       "nr": 9,
@@ -123,8 +155,12 @@
       "lovestoryTitel": "2026 – Déjà-vu oder spätes Revival – oder doch schon Demenz?",
       "zitat": "Was würdest du tun, wenn du an einem Ort festsitzen würdest und jeder Tag genau gleich wäre?",
       "werSagt": "Phil Connors, gespielt von Bill Murray – der zynische TV-Wettermann.",
-      "szeneBeschreibung": "Phil sitzt in einer Bar in Punxsutawney fest, hat den Murmeltiertag bereits unzählige Male erlebt und stellt zwei Männern an der Theke diese fast philosophische Frage. Einer antwortet trocken: „Das beschreibt mein Leben ziemlich genau.” – einer der treffendsten Momente des Films.",
-      "teaserBild": "images/teaser/poster-9.jpg"
+      "szeneBeschreibung": "Phil sitzt in einer Bar in Punxsutawney fest, hat den Murmeltiertag bereits unzählige Male erlebt und stellt zwei Männern an der Theke diese fast philosophische Frage. Einer antwortet trocken: „Das beschreibt mein Leben ziemlich genau.“ – einer der treffendsten Momente des Films.",
+      "teaserBild": "images/teaser/poster-9.jpg",
+      "falscheAntworten": [
+        { "filmtitel": "Mrs. Doubtfire", "jahre": "1993" },
+        { "filmtitel": "Hallo, Mr. President", "jahre": "1993" }
+      ]
     },
     {
       "nr": 10,
@@ -137,7 +173,11 @@
       "zitat": "Wenn man erst mal weiß, dass man den Rest seines Lebens mit jemandem verbringen will, möchte man, dass der Rest des Lebens so schnell wie möglich anfängt.",
       "werSagt": "Harry Burns, gespielt von Billy Crystal – an Sally Albright, gespielt von Meg Ryan.",
       "szeneBeschreibung": "Die ikonische Silvester-Schluss-Szene: Harry rennt durch die nächtlichen Straßen von New York zur Silvesterparty, findet Sally und hält ihr seine große, romantische Liebeserklärung – die in diesem berühmtesten aller Rom-Com-Sätze gipfelt. Spoiler: Sie heiraten.",
-      "teaserBild": "images/teaser/poster-10.jpg"
+      "teaserBild": "images/teaser/poster-10.jpg",
+      "falscheAntworten": [
+        { "filmtitel": "Pretty Woman", "jahre": "1990" },
+        { "filmtitel": "Ghost – Nachricht von Sam", "jahre": "1990" }
+      ]
     }
   ]
 }
