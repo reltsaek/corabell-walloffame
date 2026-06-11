@@ -215,7 +215,10 @@ function showFinal() {
   } else {
     rating = 'Schau dir die Wall of Fame nochmal an…';
   }
-  document.getElementById('finalRating').textContent = rating;
+  const ratingEl = document.getElementById('finalRating');
+  ratingEl.innerHTML = '';
+  const { sign } = buildMarqueeSign(rating, 18);
+  ratingEl.appendChild(sign);
 
   // Button listeners (replace to avoid duplicate bindings)
   const btnRetry = document.getElementById('btnRetry');
