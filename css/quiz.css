@@ -3,6 +3,14 @@
 .site-header .hero-photo { display: none; }
 .site-header .header-tagline {  }
 
+/* ── Top bar ─────────────────────────────────────── */
+.quiz-topbar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding: 16px 0 0;
+}
+
 /* ── Quiz page layout ────────────────────────────── */
 .quiz-page {
   display: flex;
